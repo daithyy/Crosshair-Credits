@@ -1,3 +1,9 @@
 .has-text-info {
     color: #ff003e !important;
 }
+
+.button.is-custom {
+    background-color: #ff003e;
+    border-color: transparent;
+    color: #222;
+}
