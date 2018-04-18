@@ -7,3 +7,8 @@
     border-color: transparent;
     color: #222;
 }
+
+.logo {
+    max-height: 3em;
+    width: 150px;
+}
