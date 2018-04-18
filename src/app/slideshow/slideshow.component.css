@@ -1,0 +1,7 @@
+[class*=" fa-chevron-left"]:before {
+    color: #ff003e;
+}
+
+[class*=" fa-chevron-right"]:before {
+    color: #ff003e;
+}
