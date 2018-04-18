@@ -5,3 +5,8 @@
 [class*=" fa-chevron-right"]:before {
     color: #ff003e;
 }
+
+.carousel-container {
+    width: 100%;
+    height: 400px;
+}
