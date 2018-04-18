@@ -2,8 +2,8 @@
       <div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">
           <div class='carousel-container'>
             <div class='carousel-item has-background is-active'>
-              <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" width="640" height="310" />
-              <div class="title">Merry Christmas</div>
+              <img *ngIf="articleData" class="is-background" src= {{articleData.ImageURL}} alt="" width="640" height="310" />
+              <div *ngIf="articleData" class="title">{{articleData.Title}}</div>
             </div>
             <div class='carousel-item has-background'>
               <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="" width="640" height="310" />

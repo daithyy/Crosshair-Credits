@@ -16,6 +16,8 @@ import { SideBarStoryRowComponent } from './side-bar-story-row/side-bar-story-ro
 import { SideBarVideoComponent } from './side-bar-video/side-bar-video.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { PolygonApiService } from './services/polygon-api.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
