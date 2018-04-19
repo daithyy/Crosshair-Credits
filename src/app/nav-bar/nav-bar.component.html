@@ -1,86 +1,114 @@
 <nav class="navbar is-fixed-top is-transparent">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="#">
-        <img src="https://cdn.rawgit.com/s00172994/c9a03cee666ae91b1590379c15a8fac7/raw/c2b5faba49c5c5c3d961a177cdd073d22f11b3e3/logo.svg" class="logo">
-      </a>
-      <a class="navbar-item is-hidden-desktop" href="https://github.com/s00172994/Crosshair-Credits" target="_blank">
-        <span class="icon is-medium" style="color: #ff003e;">
-          <i class="fa fa-github fa-3x"></i>
-        </span>
-      </a>
-      <div class="navbar-burger burger" data-target="navMenuExamplet" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img src="https://cdn.rawgit.com/s00172994/c9a03cee666ae91b1590379c15a8fac7/raw/c2b5faba49c5c5c3d961a177cdd073d22f11b3e3/logo.svg"
+        class="logo">
+    </a>
+    <a class="navbar-item is-hidden-desktop" href="https://github.com/s00172994/Crosshair-Credits" target="_blank">
+      <span class="icon is-medium" style="color: #ff003e;">
+        <i class="fa fa-github fa-3x"></i>
+      </span>
+    </a>
+    <div class="navbar-burger burger" data-target="navMenuExamplet" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active'); document.querySelector('.navbar-burger').classList.toggle('is-active');">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <div id="navMenuExamplet" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item is-active" href="#">
-          Home
+  </div>
+  <div id="navMenuExamplet" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item is-active" href="#">
+        Home
+      </a>
+      <a class="navbar-item " href="#">
+        News
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">
+          Platforms
         </a>
-        <a class="navbar-item " href="#">
-            News
-          </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" href="#">
-            Platforms
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item " href="#">
-              PC
-            </a>
-            <a class="navbar-item " href="#">
-              Xbox One
-            </a>
-            <a class="navbar-item " href="#">
-              PS4
-            </a>
-            <a class="navbar-item " href="#">
-              Nintendo Switch
-            </a>            
-          </div>
-        </div>
-        <a class="navbar-item " href="#">
-          Reviews
-        </a>
-        <a class="navbar-item " href="#">
-          Features
-        </a>
-        <a class="navbar-item " href="#">
-            Videos
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item " href="#">
+            PC
           </a>
           <a class="navbar-item " href="#">
-              Forums
-            </a>
-            <a class="navbar-item " href="#">
-                More
-              </a>
+            Xbox One
+          </a>
+          <a class="navbar-item " href="#">
+            PS4
+          </a>
+          <a class="navbar-item " href="#">
+            Nintendo Switch
+          </a>
+        </div>
       </div>
-      <div class="navbar-end">
-        <a class="navbar-item" href="https://github.com/s00172994/Crosshair-Credits" target="_blank">
-          Github
-        </a>
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="button is-primary is-inverted is-outlined">
-                  <span class="icon">
-                      <i class="fa fa-envelope"></i>
-                    </span>
-                <span>Subscribe</span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="button is-custom" href="#">
-                <span class="icon">
-                  <i class="fa fa-user"></i>
-                </span>
-                <span>Sign In</span>
-              </a>
-            </p>
-          </div>
+      <a class="navbar-item " href="#">
+        Reviews
+      </a>
+      <a class="navbar-item " href="#">
+        Features
+      </a>
+      <a class="navbar-item " href="#">
+        Videos
+      </a>
+      <a class="navbar-item " href="#">
+        Forums
+      </a>
+      <a class="navbar-item " href="#">
+        More
+      </a>
+    </div>
+    <div class="navbar-end">
+      <a class="navbar-item" href="https://github.com/s00172994/Crosshair-Credits" target="_blank">
+        Github
+      </a>
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button is-primary is-inverted is-outlined" onclick="document.querySelector('.modal').classList.toggle('is-active');">
+              <span class="icon">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <span>Subscribe</span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button is-custom" href="#">
+              <span class="icon">
+                <i class="fa fa-user"></i>
+              </span>
+              <span>Sign In</span>
+            </a>
+          </p>
         </div>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<div class="modal" id="myModal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Subscribe to our newsletter</p>
+      <button class="delete toggle-modal" onclick="document.querySelector('.modal').classList.toggle('is-active');"></button>
+    </header>
+    <section class="modal-card-body">
+        <div class="field">
+            <p>By submitting this form, you agree to receive email/SMS offers from Crosshair Credits. We will never supply your details to third parties and you have the option of unsubscribing from the mailing list at any time.</p>
+        </div>
+        <div class="field">
+            <p class="control has-icons-left">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </p>
+          </div>
+    </section>
+    <footer class="modal-card-foot">
+      <a class="button is-primary toggle-modal" onclick="document.querySelector('.modal').classList.toggle('is-active');">Subscribe</a>
+      <a class="button toggle-modal" onclick="document.querySelector('.modal').classList.toggle('is-active');">Cancel</a>
+    </footer>
+  </div>
+</div>
