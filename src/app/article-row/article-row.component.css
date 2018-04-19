@@ -4,6 +4,10 @@
     box-shadow: 0 0 0 1px black;
 }
 
+.card.custom {
+    margin: 20px;
+}
+
 .title {
     color: #e8e5e0;
 }

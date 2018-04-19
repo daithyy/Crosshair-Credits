@@ -1,26 +1,30 @@
-<div class="card">
-    <div class="card-image">
-        <figure class="image is-4by3">
-            <span class="icon" style="color: #ff003e;">
-                <i class="fa fa-user"></i>
-            </span>
-        </figure>
-    </div>
-    <div class="card-content">
-        <div class="media">
-            <div class="media-left">
-                <figure class="image" style="height: 40px; width: 40px;">
-                    <img src="" alt="Image"> </figure>
-            </div>
-            <div class="media-content">
-                <p class="title is-4">John Smith</p>
-                <p class="subtitle is-6">@johnsmith</p>
-            </div>
+<div *ngIf="articleData">            
+    <div *ngFor="let article of articleData.articles; let i=index" class="card custom">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img *ngIf="articleData" src={{articleData.articles[i].urlToImage}} alt="Image">
+            </figure>
         </div>
-        <div class="content">
-            <p></p>
-            <br>
-            <small>11:09 PM - 1 Jan 2016</small>
+        <div class="card-content">
+            <div class="media">
+                <div class="media-left">
+                    <figure class="image" style="height: 40px; width: 40px;">
+                        <span class="icon is-large" style="color: #ff003e;">
+                            <i class="fa fa-user fa-3x"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <p *ngIf="articleData" class="title is-4">{{articleData.articles[i].title}}</p>
+                    <p *ngIf="articleData" class="title is-4">{{articleData.articles[i].author}}</p>
+                    <a *ngIf="articleData" class="subtitle is-6">{{articleData.articles[i].url}}</a>
+                </div>
+            </div>
+            <div class="content">
+                <p *ngIf="articleData">{{articleData.articles[i].description}}</p>
+                <br>
+                <small *ngIf="articleData">{{articleData.articles[i].publishedAt}}</small>
+            </div>
         </div>
     </div>
 </div>

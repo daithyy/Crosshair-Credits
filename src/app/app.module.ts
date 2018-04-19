@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
-import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleRowComponent } from './article-row/article-row.component';
 import { NavBarSearchComponent } from './nav-bar-search/nav-bar-search.component';
 import { ArticleCommentsComponent } from './article-comments/article-comments.component';
@@ -24,7 +23,6 @@ import { PolygonApiService } from './services/polygon-api.service';
     NavBarComponent,
     SideBarComponent,
     SlideshowComponent,
-    ArticleListComponent,
     ArticleRowComponent,
     NavBarSearchComponent,
     ArticleCommentsComponent,
