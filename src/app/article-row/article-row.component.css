@@ -1,0 +1,13 @@
+.card {
+    background-color: black;
+    color: #f5f5f5;
+    box-shadow: 0 0 0 1px black;
+}
+
+.title {
+    color: #e8e5e0;
+}
+
+.media-content {
+    overflow: hidden;
+}
