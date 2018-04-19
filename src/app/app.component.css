@@ -5,3 +5,20 @@ html {
 section {
     color: #e8e5e0;
 }
+
+a {
+    color: #e8e5e0;
+}
+
+.tabs a {
+    color: #e8e5e0;
+}
+
+.tabs a:hover {
+    border-bottom-color: white;
+    color: white;
+}
+
+.tabs li.is-active a {
+    color: #ff003e;
+}

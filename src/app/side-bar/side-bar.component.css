@@ -1,0 +1,8 @@
+.menu-list a {
+    color: #f5f5f5;
+}
+
+.menu-list a:hover {
+    background-color: #f5f5f5;
+    color: #363636;
+}
